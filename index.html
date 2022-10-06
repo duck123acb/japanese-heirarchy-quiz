@@ -14,7 +14,7 @@
 	
 	<form>
 		<section id="question-1">
-			<h1>Question 1 <br> What is the order of the Japanese Order Hierarchy? (Most Powerful to Least Powerful)</h1>
+			<h2>Question 1 <br> What is the order of the Japanese Order Hierarchy? (Most Powerful to Least Powerful)</h2>
 			<datalist id="hierarchy">
 				<option value="Emperor">
 				<option value="Shogun">
@@ -38,7 +38,7 @@
 		</section>
 
 		<section id="question-2">
-			<h1>Question 2 <br> What is the role of the Daimyo in the Hierarchy?</h1>
+			<h2>Question 2 <br> What is the role of the Daimyo in the Hierarchy?</h2>
 			<input type="radio" id="ans-1" name="question-2-ans" value="1">
 			<label for="ans-1">People who held all the real power in Japan</label>
 			<input type="radio" id="ans-2" name="question-2-ans" value="2">
@@ -49,7 +49,24 @@
 			<label for="ans-4">The King of the World</label>
 		</section>
 
-		
+		<section id="question-3">
+			<h2>Question 3 <br> What are the virtues of the Bushido Code?</h2>
+			<select id="virtues" name="virtues" multiple>
+				<option value="Justice">Justice</option>
+				<option value="disloyalty">Disloyalty</option>
+				<option value="mercy">Mercy</option>
+				<option value="compassion">Compassion</option>
+				<option value="honour">Honour</option>
+                                <option value="loyalty">Loyalty</option>
+				<option value="hopefulness">Hopefulness</option>
+                                <option value="courage">Courage</option>
+				<option value="glamour">Glamour</option>
+				<option value="honesty">Honesty</option>
+				<option value="self-control">Self-Control</option>
+				<option value="violence">violence</option>
+			</select>
+			<label for="virtues">(hold <kbd>ctrl</kbd> / <kbd>cmd</kbd> and click all the ones that apply, all the ones that are highlighted will be the ones you are submitting)</label>
+		</section>
 	</form>
 </body>
 </html>
