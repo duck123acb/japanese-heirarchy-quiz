@@ -5,6 +5,10 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Japanese Hierarchy Quiz</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="styles.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
 	<script src="script.js" defer></script>
 </head>
@@ -39,15 +43,23 @@
 
 		<section id="question-2">
 			<h2>Question 2 <br> What is the role of the Daimyo in the Hierarchy?</h2>
-			<input type="radio" id="ans-1" name="question-2-ans" value="1" required>
-			<label for="ans-1">People who held all the real power in Japan</label>
-			<input type="radio" id="ans-2" name="question-2-ans" value="2" required>
-			<label for="ans-2">Paid Warriors that were loyal to the Shogun</label>
-			<input type="radio" id="ans-3" name="question-2-ans" value="3" required>
-			<label for="ans-3">Local Rulers in the Land of the Shogunate</label>
-			<input type="radio" id="ans-4" name="question-2-ans" value="4" required>
-			<label for="ans-4">The King of the World</label>
-		</section>
+			<div>
+				<input type="radio" id="ans-1" name="question-2-ans" value="1" required>
+				<label for="ans-1">People who held all the real power in Japan</label>				
+			</div>
+			<div>
+				<input type="radio" id="ans-2" name="question-2-ans" value="2" required>
+				<label for="ans-2">Paid Warriors that were loyal to the Shogun</labe>
+			</div>
+			<div>
+				<input type="radio" id="ans-3" name="question-2-ans" value="3" required>
+				<label for="ans-3">Local Rulers in the Land of the Shogunate</label>
+			</div>
+			<div>
+				<input type="radio" id="ans-4" name="question-2-ans" value="4" required>
+				<label for="ans-4">The King of the World</label>
+			</div>
+			</section>
 
 		<section id="question-3">
 			<h2>Question 3 <br> What are the virtues of the Bushido Code?</h2>
@@ -67,6 +79,9 @@
 			</select>
 			<label for="virtues">(hold <kbd>ctrl</kbd> / <kbd>cmd</kbd> and click all the ones that apply, all the ones that are highlighted will be the ones you are submitting)</label>
 		</section>
+
+		<br>
+		<br>
 
 		<input type="submit">
 	</form>

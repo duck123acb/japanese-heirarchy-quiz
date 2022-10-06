@@ -1,0 +1,25 @@
+:root {
+	/* colour pallate: https://coolors.co/bf1a2f-cbd4c2-454e9e-1e1b18-f6f740 */
+	--black: #1E1B18;
+	--white: #CBD4C2;
+	--red: #BF1A2F;
+	--blue: #454E9E;
+	--yellow: #F6F740;
+}
+
+*, *::before, *::after {
+	/* font-family: 'Open Sans', sans-serif; */
+	font-family: 'Noto Sans JP', sans-serif;
+	background: var(--white);
+	color: var(--black);
+}
+
+section {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+input {
+	border-radius: .5rem;
+}
