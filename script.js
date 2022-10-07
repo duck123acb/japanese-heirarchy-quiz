@@ -1,9 +1,13 @@
 const form = $("form");
 const reload = $("#reload");
 const messageView = $("#message");
+const finishMessage = $("#onFinish");
 const rightAnswers = ["Emperor", "Shogun", "Daimyo","Samurai", "Ronin", "Peasants", "Artisans", "Merchants", "Outcasts", "3", "justice", "compassion", "honour", "loyalty", "courage", "honesty", "self-control"];
 let message = "Oh no! You messed up on: <br>";
 let isWrong, questionOneWrong, questionTwoWrong, questionThreeWrong = false;
+
+form.css("display", "block");
+finishMessage.css("display", "none");
 
 function checkAns() {
 	let answers = form.serializeArray();
@@ -40,6 +44,8 @@ form.on("submit", function (e) {
 	e.preventDefault();
 	checkAns();
 	messageView.html(message);
+	form.css("display", "none");
+	finishMessage.css("display", "block");
 });
 
 reload.on("click", function() {

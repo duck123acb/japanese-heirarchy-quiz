@@ -13,8 +13,10 @@
 	<script src="script.js" defer></script>
 </head>
 <body>
-	<h1>Japanese Hierarchy Quiz!!</h1>
-	<h3>Do YOU have what it takes to get ALL of the questions right? <br> Take the quiz and find out</h3>
+	<header>
+		<h1>Japanese Hierarchy Quiz!!</h1>
+		<h3>Do YOU have what it takes to get ALL of the questions right? <br> Take the quiz and find out</h3>
+	</header>
 	
 	<form>
 		<section id="question-1">
@@ -77,18 +79,19 @@
 				<option value="self-control">Self-Control</option>
 				<option value="violence">violence</option>
 			</select>
-			<label for="virtues">(hold <kbd>ctrl</kbd> / <kbd>cmd</kbd> and click all the ones that apply, all the ones that are highlighted will be the ones you are submitting)</label>
+			<label for="virtues">(scroll down, and hold <kbd>ctrl</kbd> / <kbd>cmd</kbd> and click all the ones that apply, all the ones that are highlighted will be the ones you are submitting)</label>
 		</section>
 
 		<br>
 		<br>
-
-		<input type="submit">
+		<section>
+			<input type="submit" value="Finish!">
+		</section>
 	</form>
 
 	<div id="onFinish">
 		<p id="message">if you're seeing this (as a user), then you're experiencing a bug D:</p>
-		<button id="reload">retake :D</button>
+		<button id="reload">Retake</button>
 	</div>
 </body>
 </html>
